@@ -215,3 +215,11 @@ th, td { text-align: left; padding: 12px 16px; border-bottom: 2px solid var(--me
 .titulo.gigante { font-size: clamp(4.4rem, 12vw, 9.5rem); }
 @media (min-width: 900px) { .split .titulo { font-size: clamp(2.8rem, 6.2vw, 6rem); } }
 .res-cab .etq { margin-bottom: 34px; }
+
+/* Más aire bajo la barra superior */
+.topbar { margin-bottom: 28px; }
+.res-cab { margin-top: 8px; }
+/* Nombre de la tarea dentro de la tarjeta (antes cruzaba el borde) */
+.tarea legend { float: left; width: 100%; padding: 0 0 12px; font-size: 1.4rem; line-height: 1.2; }
+.tarea legend + * { clear: both; }
+.tarea { padding: 18px 16px 16px; }
