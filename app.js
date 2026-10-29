@@ -217,7 +217,7 @@ function pResultados() {
   return slide('mint', 3, 'resultados', `
     <div class="topbar">${atras('#/form/5')}</div>
     <div class="res-cab">
-      <div>${etq('Tu perfil')}${T(['Fortalezas', `de ${S.nombre.trim().split(/\s+/)[0]}`], 'mediano')}
+      <div>${etq('Tu perfil')}${T(['Fortalezas', `de ${S.nombre.trim().split(/\s+/)[0]}`], 'mediano plano')}
         <ul class="lista-chips">${chips}${gustan}</ul></div>
       ${mascota('pulgar', 'lime', true)}
     </div>
