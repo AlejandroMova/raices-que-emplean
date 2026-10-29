@@ -94,7 +94,7 @@ const hexIn = (contenido) => `<svg class="hexbg" viewBox="0 0 100 100" preserveA
 const hexOpcion = (tipo, name, value, checked, emoji, texto, attrs) =>
   `<label class="hexw"><input class="vh" type="${tipo}" name="${name}" value="${esc(value)}" ${checked ? 'checked' : ''} ${attrs}>${hexIn(`<span class="hex-emoji" aria-hidden="true">${emoji}</span><span class="hex-txt">${esc(texto)}</span>`)}<span class="visto" aria-hidden="true">✓</span></label>`;
 const chip = (name, value, checked, emoji, texto, attrs) =>
-  `<label class="chip"><input class="vh" type="checkbox" name="${name}" value="${esc(value)}" ${checked ? 'checked' : ''} ${attrs}><span>${emoji ? `<span aria-hidden="true">${emoji}</span> ` : ''}${esc(texto)}</span></label>`;
+  `<label class="chip"><input class="vh" type="checkbox" name="${name}" value="${esc(value)}" ${checked ? 'checked' : ''} ${attrs}><span>${emoji ? `<span class="emo" aria-hidden="true">${emoji}</span>` : ''}${esc(texto)}</span></label>`;
 const campo = (id, etiqueta, ctrl) => `<div class="campo"><label for="${id}">${etiqueta}</label>${ctrl}</div>`;
 
 // Marco circular para foto. Reemplazar con foto real de Casa CAI, con consentimiento.

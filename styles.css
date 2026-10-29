@@ -95,9 +95,9 @@ textarea { resize: vertical; }
 /* chips, fechas, caritas */
 .chips { display: flex; flex-wrap: wrap; gap: 12px; }
 .chip, .fecha, .carita { position: relative; display: block; cursor: pointer; }
-.chip span, .fecha span { display: block; padding: 12px 22px; min-height: 52px; border: 4px solid var(--medio); border-radius: 999px; background: var(--tarjeta); color: var(--bosque); font-weight: 700; transition: transform .18s, background .18s; }
-.fecha span { border-radius: 18px; }
-.chip:hover span, .fecha:hover span { transform: scale(1.04); }
+.chip > span, .fecha > span { display: block; padding: 12px 22px; min-height: 52px; border: 4px solid var(--medio); border-radius: 999px; background: var(--tarjeta); color: var(--bosque); font-weight: 700; transition: transform .18s, background .18s; }
+.fecha > span { border-radius: 18px; }
+.chip:hover > span, .fecha:hover > span { transform: scale(1.04); }
 .vh:checked + span { background: var(--lima); border-color: var(--bosque); }
 .vh:focus-visible + span { outline: 4px solid var(--foco); outline-offset: 3px; }
 .tarea { background: var(--tarjeta); color: var(--bosque); border: 4px solid var(--medio); border-radius: 24px; padding: 14px 16px 16px; margin: 0 0 14px; min-width: 0; }
@@ -174,7 +174,7 @@ a.hexw:focus-visible { outline: none; }
 .foto svg { width: 100%; height: 100%; display: block; }
 .foto-emoji { position: absolute; top: 20%; left: 50%; transform: translateX(-50%); font-size: 5.5rem; }
 .foto-wrap .mascota { position: absolute; right: -8%; top: -12%; width: 36%; }
-.fecha span { margin-bottom: 4px; }
+.fecha > span { margin-bottom: 4px; }
 .perfil { background: var(--tarjeta); color: var(--bosque); border: 5px solid var(--medio); border-radius: 28px; padding: 22px; display: grid; gap: 14px; }
 .perfil h2 { font-family: var(--display); font-size: 2.4rem; line-height: 1; }
 .perfil h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
@@ -223,3 +223,22 @@ th, td { text-align: left; padding: 12px 16px; border-bottom: 2px solid var(--me
 .tarea legend { float: left; width: 100%; padding: 0 0 12px; font-size: 1.4rem; line-height: 1.2; }
 .tarea legend + * { clear: both; }
 .tarea { padding: 18px 16px 16px; }
+
+.chip > span { display: inline-flex; align-items: center; gap: 10px; }
+.emo { font-size: 1.9rem; line-height: 1; }
+
+/* Más respiro entre elementos */
+.wrap { gap: 32px; }
+.res-cab .titulo { margin-bottom: 28px; }
+.lista-chips { margin-top: 0; gap: 12px; }
+.seccion { margin-top: 20px; }
+.hexgrid { gap: 28px 16px; }
+.hexb .hex-in { gap: 8px; padding: 6% 16%; }
+.insignia { margin-bottom: 6px; }
+.hex-razon { margin: 2px 0 4px; }
+.puntos { margin-top: 4px; }
+.hex-emoji { margin-bottom: 2px; }
+.izq, .der { gap: 28px; }
+.caja { margin-top: 6px; }
+.vin { gap: 8px; }
+.sub { margin-top: 18px; }
